@@ -1,4 +1,5 @@
-package io.github.codetosurvive.spark.study.core;
+package io.github.codetosurvive.spark.core;
+
 
 import java.util.Arrays;
 
