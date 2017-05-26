@@ -1,6 +1,5 @@
 package io.github.codetosurvive.spark.conf;
 
-
 import java.io.InputStream;
 import java.util.Properties;
 
@@ -87,6 +86,15 @@ public class ConfigurationManager {
 			return Integer.valueOf(value);
 		} catch (Exception e) {
 			return 0;
+		}
+	}
+
+	public static boolean getBoolean(String key) {
+		try {
+			String value = getProperty(key);
+			return Boolean.valueOf(value);
+		} catch (Exception e) {
+			return false;
 		}
 	}
 
